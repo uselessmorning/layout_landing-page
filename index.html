@@ -60,7 +60,7 @@
                   href="tel:+1 234 5555-55-55"
                   class="top-bar__phone-number"
                 >
-                  +1 234 5555-55-55
+
                 </a>
                 <a
                   href="#"
@@ -343,7 +343,7 @@
                 </div>
               </article>
             </div>
-            <button class="button button--explore">Explore</button>
+            <button class="button">Explore</button>
           </section>
 
           <section
@@ -351,24 +351,48 @@
             id="contacts"
           >
             <h2 class="section-title">Contact us</h2>
-            <input
-              type="text"
-              placeholder="Name"
-              class="contacts contacts--name"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              class="contacts contacts--email"
-            />
-            <textarea
-              placeholder="Message"
-              class="contacts contacts--message"
-            ></textarea>
-            <button class="contacts contacts--button">Send</button>
+            <div class="contacts__content">
+              <div class="contacts__form">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="contacts contacts--input"
+                  name="Name"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="contacts contacts--input"
+                  required
+                />
+                <textarea
+                  placeholder="Message"
+                  class="contacts contacts--message"
+                  maxlength="300"
+                ></textarea>
+                <button type="submit" class="contacts contacts--button">Send</button>
+              </div>
+              <div class="contacts__blocks">
+                <div class="contacts__info">
+                  <h4 class="contacts__text">Phone</h4>
+                  <p class="contacts__description">+1 234 5555-55-55</p>
+                </div>
+                <div class="contacts__info">
+                  <h4 class="contacts__text">Email</h4>
+                  <p class="contacts__description">hello@miami.com</p>
+                </div>
+                <div class="contacts__info">
+                  <h4 class="contacts__text">Address</h4>
+                  <p class="contacts__description">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer__content"></div>
+    </footer>
   </body>
 </html>

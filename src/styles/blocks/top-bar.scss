@@ -29,10 +29,18 @@
   }
 
   &__phone-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 20px;
   }
+
+  &__phone-number {
+    position: absolute;
+    opacity: 0;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
-
-

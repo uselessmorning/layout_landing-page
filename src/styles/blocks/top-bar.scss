@@ -16,7 +16,7 @@
   &__logo {
     width: 130px;
     height: 38px;
-    @include hover(transform, scale(1.2));
+    @include hover(transform, scale(1.05));
 
     @include onTablet {
       width: 187px;
@@ -38,7 +38,7 @@
   &__phone-number {
     position: absolute;
     opacity: 0;
-    
+
     &:hover {
       opacity: 1;
     }

@@ -30,7 +30,7 @@
     />
     <link
       rel="shortcut icon"
-      href="../images/icons/favicon-my-bike.png"
+      href="/src/images/icons/favicon-my-bike.png"
       type="image/x-icon"
     />
     <script
@@ -59,9 +59,7 @@
                 <a
                   href="tel:+1 234 5555-55-55"
                   class="top-bar__phone-number"
-                >
-
-                </a>
+                ></a>
                 <a
                   href="#"
                   class="icon icon--phone"
@@ -352,12 +350,13 @@
           >
             <h2 class="section-title">Contact us</h2>
             <div class="contacts__content">
-              <div class="contacts__form">
+              <form class="contacts__form">
                 <input
                   type="text"
                   placeholder="Name"
                   class="contacts contacts--input"
                   name="Name"
+                  required
                 />
                 <input
                   type="email"
@@ -370,8 +369,13 @@
                   class="contacts contacts--message"
                   maxlength="300"
                 ></textarea>
-                <button type="submit" class="contacts contacts--button">Send</button>
-              </div>
+                <button
+                  type="submit"
+                  class="contacts contacts--button"
+                >
+                  Send
+                </button>
+              </form>
               <div class="contacts__blocks">
                 <div class="contacts__info">
                   <h4 class="contacts__text">Phone</h4>
@@ -383,7 +387,13 @@
                 </div>
                 <div class="contacts__info">
                   <h4 class="contacts__text">Address</h4>
-                  <p class="contacts__description">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
+                  <p class="contacts__description">
+                    400 first ave.
+                    <br />
+                    suite 700
+                    <br />
+                    Minneapolis, MN 55401
+                  </p>
                 </div>
               </div>
             </div>

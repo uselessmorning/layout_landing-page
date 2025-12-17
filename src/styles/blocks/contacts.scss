@@ -105,15 +105,18 @@
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0px;
+
   }
 
-  &__description {
+  &__link {
+    text-decoration: none;
     margin: 0;
     margin-bottom: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0px;
+    color: #fff;
 
     &:hover {
       color: #d1d1d1;

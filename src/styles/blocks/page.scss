@@ -2,6 +2,10 @@
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
 
   &__body {
     margin: 0;
